@@ -19,6 +19,8 @@ public class Pertemuan1_2 {
             }
         } while (faktor < 0 || faktor > 15);
 
+        data.close();
+
         if (faktor == 0) {
             System.out.println(1);
             return;

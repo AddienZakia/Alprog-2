@@ -11,6 +11,8 @@ public class MethodArray {
             System.out.print("Masukkan array " + index + " untuk data ke " + (i + 1) + " : ");
             array[i] = baca.nextInt();
         }
+
+        baca.close();
     }
 
     static void bacaArray(int[] array) {
@@ -57,6 +59,8 @@ public class MethodArray {
         System.out.print("Masukkan ukuran array 2: ");
         ukuran2 = data.nextInt();
         data2 = new int[ukuran2];
+
+        data.close();
 
         // isi array
         isiArray(1, ukuran1, data1);

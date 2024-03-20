@@ -15,6 +15,8 @@ public class CheckUsia {
         System.out.print("Masukkan ukuran array 1: ");
         age = in.nextInt();
 
+        in.close();
+
         if (age <= 0) {
             System.out.println("Maaf usia tidak bsia bernilai negatif dan bernilai 0");
         } else if (age <= 30) {

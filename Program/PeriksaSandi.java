@@ -35,6 +35,8 @@ public class PeriksaSandi {
         System.out.print("Berikan string: ");
         String kalimat = data.nextLine();
 
+        data.close();
+
         Boolean check = checkSandi(kalimat);
         if (check)
             System.out.println("Kata Sandi Valid");

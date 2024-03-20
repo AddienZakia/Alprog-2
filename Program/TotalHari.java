@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 
 public class TotalHari {
-    static int TotalHari(int tahun1, int tahun2) {
+    static int total_hari(int tahun1, int tahun2) {
         int sum = 0;
         for (int i = tahun1; i <= tahun2; i++) {
             if (i % 4 == 0)
@@ -33,7 +33,9 @@ public class TotalHari {
         System.out.print("masukkan tahun pertama: ");
         tahun2 = data.nextInt();
 
-        int total = TotalHari(tahun1, tahun2);
+        data.close();
+
+        int total = total_hari(tahun1, tahun2);
         System.out.println("Total hari: " + total + " hari");
     }
 }
