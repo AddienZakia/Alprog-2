@@ -5,7 +5,7 @@ package Program;
  */
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] data = { 10, 15, 27, 32, 45, 50, 63, 78, 84, 91, 95, 99 };
+        int[] data = { 10, 15, 27, 32, 45, 60 };
         int key = 27;
 
         int bawah = 0;
@@ -16,6 +16,9 @@ public class BinarySearch {
 
             if (atas == bawah) {
                 System.out.println("data pada urutan : " + (atas + 1));
+                break;
+            } else if (tengah == bawah && atas - 1 == bawah && data[tengah] != key) {
+                System.out.println("Data tidak ditemukan");
                 break;
             }
 
