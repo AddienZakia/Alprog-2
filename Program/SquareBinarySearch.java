@@ -3,7 +3,11 @@ package Program;
 import java.util.Scanner;
 
 public class SquareBinarySearch {
-    static void binSearch(int[] arr, int key) {
+    static void binSearch(int key) {
+        int arr[] = new int[key];
+        for (int i = 1; i <= key; i++)
+            arr[i - 1] = i;
+
         if (key == 0) {
             System.out.println("sqrt(0) = 0");
             return;
@@ -34,15 +38,10 @@ public class SquareBinarySearch {
     public static void main(String[] args) {
         Scanner data = new Scanner(System.in);
 
-        System.out.print("number = ");
-        int num = data.nextInt();
-
         data.close();
 
-        int[] arr = new int[num];
-        for (int i = 1; i <= num; i++)
-            arr[i - 1] = i;
-
-        binSearch(arr, num);
+        for (int i = 0; i <= 10; i++) {
+            binSearch(i);
+        }
     }
 }
