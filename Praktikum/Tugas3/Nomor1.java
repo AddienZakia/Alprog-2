@@ -1,4 +1,4 @@
-package Praktikum.Tugas.Tugas3;
+package Praktikum.Tugas3;
 
 import java.util.Scanner;
 
