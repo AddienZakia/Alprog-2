@@ -44,20 +44,37 @@ public class ClassTesting {
         // System.out.println(pp1.luas());
 
         // Employee class
-        Employee Dinda = new Employee();
-        Dinda.isiData("Dinda", 5_000_000);
-        Dinda.display();
+        // Employee Dinda = new Employee();
+        // Dinda.isiData("Dinda", 5_000_000);
+        // Dinda.display();
 
-        System.out.println(Dinda);
+        // System.out.println(Dinda);
 
-        Manager Daus = new Manager();
-        Daus.isiData("Daus", 3_000_000, "Teknik");
-        Daus.display();
+        // Manager Daus = new Manager();
+        // Daus.isiData("Daus", 3_000_000, "Teknik");
+        // Daus.display();
 
-        System.out.println(Daus);
+        // System.out.println(Daus);
 
-        Manager Fina = new Manager("Fina", 4_000_000, "HRD");
-        Fina.display();
+        // Manager Fina = new Manager("Fina", 4_000_000, "HRD");
+        // Fina.display();
+
+        // Rasional class
+        Rasional bil1 = new Rasional(2, 4);
+        bil1.info();
+        System.out.println("Nilai desimal: " + bil1.toDesimal());
+
+        Rasional bil2 = new Rasional(2, 4);
+        bil2.info();
+        bil1.isEqual(bil2);
+
+        Rasional bil3 = new Rasional(2, 4);
+        bil3.kaliKonstanta(10);
+        bil1.info();
+
+        Rasional bil4 = new Rasional();
+        bil4 = bil1.Tambah(bil2);
+        bil4.info();
 
     }
 }

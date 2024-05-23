@@ -1,0 +1,55 @@
+@startuml
+
+class Orang {
+    - String nama
+    - String alamat
+    - String noTelp
+    - String email
+    + Orang(String nama, String alamat, String noTelp, String email)
+    + setNama(String nama)
+    + setAlamat(String alamat)
+    + setEmail(String email)
+    + setNoTelp(String noTelp)
+    + getAlamat() : String
+    + getEmail() : String
+    + getNama() : String
+    + getNoTelp() : String
+    + display() : void
+}
+
+class Mahasiswa extends Orang {
+    - String tahunAngkatan
+    + Mahasiswa(String nama, String alamat, String noTelp, String email, String tahunAngkatan)
+    + setTahunAngkatan(String tahunAngkatan)
+    + getTahunAngkatan() : String
+    + display() : void
+}
+
+class Pegawai extends Orang {
+    - String dataGaji
+    - int jamKerja
+    + Pegawai(String nama, String alamat, String noTelp, String email, String dataGaji, int jamKerja)
+    + setDataGaji(String dataGaji)
+    + setJamKerja(int jamKerja)
+    + getDataGaji() : String
+    + getJamKerja() : int
+    + display() : void
+}
+
+class Dosen extends Pegawai {
+    - String gelar
+    + Dosen(String nama, String alamat, String noTelp, String email, String dataGaji, int jamKerja, String gelar)
+    + setGelar(String gelar)
+    + getGelar() : String
+    + display() : void
+}
+
+class Tendik extends Pegawai {
+    - String jabatan
+    + Tendik(String nama, String alamat, String noTelp, String email, String dataGaji, int jamKerja, String jabatan)
+    + setJabatan(String jabatan)
+    + getJabatan() : String
+    + display() : void
+}
+
+@enduml
