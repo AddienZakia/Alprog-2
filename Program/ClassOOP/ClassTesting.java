@@ -60,21 +60,33 @@ public class ClassTesting {
         // Fina.display();
 
         // Rasional class
-        Rasional bil1 = new Rasional(2, 4);
-        bil1.info();
-        System.out.println("Nilai desimal: " + bil1.toDesimal());
+        // Rasional bil1 = new Rasional(2, 4);
+        // bil1.info();
+        // System.out.println("Nilai desimal: " + bil1.toDesimal());
 
-        Rasional bil2 = new Rasional(2, 4);
-        bil2.info();
-        bil1.isEqual(bil2);
+        // Rasional bil2 = new Rasional(2, 4);
+        // bil2.info();
+        // bil1.isEqual(bil2);
 
-        Rasional bil3 = new Rasional(2, 4);
-        bil3.kaliKonstanta(10);
-        bil1.info();
+        // Rasional bil3 = new Rasional(2, 4);
+        // bil3.kaliKonstanta(10);
+        // bil1.info();
 
-        Rasional bil4 = new Rasional();
-        bil4 = bil1.Tambah(bil2);
-        bil4.info();
+        // Rasional bil4 = new Rasional();
+        // bil4 = bil1.Tambah(bil2);
+        // bil4.info();
 
+        // Tes Binatang
+        Anjing A = new Anjing();
+        A.bersuara();
+
+        Kucing K = new Kucing();
+        K.bersuara();
+
+        Binatang B1 = new Anjing();
+        B1.bersuara();
+
+        Binatang B2 = new Kucing();
+        B2.bersuara();
     }
 }
