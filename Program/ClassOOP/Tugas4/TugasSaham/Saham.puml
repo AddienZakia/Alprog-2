@@ -1,0 +1,21 @@
+@startuml
+
+class Saham {
+    - String simbol
+    - String nama
+    - double priorClosingPrice
+    - double currentPrice
+    
+    + Saham(String simbol, String nama)
+    + void setCurrentPrice(double currentPrice)
+    + void setNama(String nama)
+    + void setPriorClosingPrice(double priorClosingPrice)
+    + void setSimbol(String simbol)
+    + double getCurrentPrice()
+    + String getNama()
+    + double getPriorClosingPrice()
+    + String getSimbol()
+    + void getChangePercent()
+}
+
+@enduml
